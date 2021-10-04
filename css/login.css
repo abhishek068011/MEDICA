@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:500,600,700|Roboto&display=swap");
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #6F8BA4;
+    font-weight: 400;
+}
+
+.form-signin{
+    margin-bottom: 15rem;
+}
+
+.form-signin h1{
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.form-signin img{
+    width: 7rem; 
+    height: 7rem;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="tel"], .btnsignin{
+    box-shadow: none;
+    height: 45px;
+    outline: none;
+    font-size: 14px;
+}
+
+.btnsignin{
+    background-color: #1b3d68;
+    border: none;
+    outline: none;
+}
+
+.btnsignin:hover{
+    background-color: #e12454;
+}
+  
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus, input[type="tel"]:focus{
+    box-shadow: none;
+    border: 1px solid #223a66;
+}
+
+/*--------------------- Media Queries for Contact Section --------------------------------*/
+@media only screen and (max-width: 750px) {
+    .form-signin h1{
+        font-size: 2rem;
+    }
+    .form-signin img{
+        width: 5rem; 
+        height: 5rem;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .form-signin h1{
+        font-size: 1.5rem;
+    }
+    .form-signin img{
+        width: 3rem; 
+        height: 3rem;
+    }
+}

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:500,600,700|Roboto&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #6F8BA4;
+    font-weight: 400;
+}
+
+.section-title {
+    padding: 120px 0px 70px 0px;
+    position: relative;
+}
+
+section::before{
+    content: "";
+    background: url("../image/bg-22.jfif") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.section-title h1{
+    color: #223a66;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.services-section{
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+}
+
+.services-head{
+    margin-bottom: 3rem;
+}
+
+.services-head h2{
+    color: #223a66;
+    font-family: "Exo", sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+/*--------------------- Media Queries for About Section --------------------------------*/
+@media only screen and (max-width: 500px) {
+    .services-head h2{
+        font-size: 2.5rem;
+    }
+    .section-title h1{
+        font-size: 3.5rem;
+    }
+    h3{
+        font-size: 1.8rem
+    }
+    p{
+        font-size: 1rem;
+    }
+  }

@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  --main-color: #1b3d68;
+  --primry-color: #888888;
+  --button-background: #1b3d68;
+  --button-hover: #e12454;
+  --primary-button-background: #fe7649;
+  --background-color: #f0f7ff;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  font-family: Avenir LT Std;
+  color: var(--main-color);
+}
+
+h4,
+h3 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--main-color);
+}
+
+h3 {
+  font-weight: 750;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  text-transform: capitalize;
+}
+
+p,
+a,
+button {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primry-color);
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 150%;
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  line-height: 3.6rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+button a{
+  color: var(--background-color);
+}
+
+button a:hover{
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+/* -------------------------------------- Navbar Style------------------------------------------------ */
+header {
+  padding: 0 4rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 12rem;
+}
+
+header nav .menu {
+  display: flex;
+  align-items: center;
+} 
+
+header nav .menu a {
+  padding: 0 2rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--button-background);
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.active{
+  border-top: 2px solid var(--button-background);
+  border-bottom: 2px solid var(--button-background);
+  color: var(--button-hover);
+}
+
+header nav .menu a:hover{
+  border-top: 2px solid var(--button-hover);
+  border-bottom: 2px solid var(--button-hover);
+  color: var(--button-hover);
+}
+
+header nav .appointment button {
+  padding: 0.5rem 2.5rem;
+  background-color: var(--button-background);
+  color: #fff;
+}
+
+header nav .appointment button:hover {
+  background: var(--button-hover);
+}
+
+
+/*--------------------------- First Section -----------------------------*/
+.first-section{
+  padding: 0 10rem;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-section .leftside h1{
+  font-size: 6.5rem;
+  margin-bottom: 2rem;
+}
+
+.first-section .leftside button {
+  padding: 0.5rem 2.5rem;
+  background-color: var(--button-background);
+  color: #fff;
+}
+
+.first-section .leftside button:hover {
+  background: var(--button-hover);
+}
+
+/*--------------------------- Second Section -----------------------------*/
+.second-section{
+  padding: 0 10rem;
+  margin-bottom: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.second-section .rightside{
+  margin-left: 8rem;
+}
+
+.second-section .rightside h1{
+  font-size: 6.5rem;
+  margin-bottom: 2rem;
+}
+
+.second-section .rightside p{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.second-section .rightside button {
+  padding: 0.5rem 2.5rem;
+  background-color: var(--button-background);
+  color: #fff;
+}
+
+.second-section .rightside button:hover {
+  background: var(--button-hover);
+}
+
+
+/*-------------------------- Third Section ---------------------------*/
+.third-section-head h1{
+  text-align: center;
+  font-size: 6.5rem;
+
+}
+
+.third-section{
+    margin: 5rem 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.third-section .task{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30rem;
+    height: 25rem;
+    margin: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+    border-radius: 2rem;
+}
+
+.third-section .task:hover{
+    background: #fff;
+    box-shadow: 0rem 0.4rem 2rem rgba(35, 52, 53, 0.25);
+}
+
+.third-section .task:hover > img{
+    transform: rotate(360deg);
+}
+
+.third-section .task img{
+    width: 15rem;
+    height: 15rem;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+
+.third-section .task .taskhead h3{
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+.third-section .task .taskpara p{
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+
+/*-------------------------- Fouth Section ---------------------------*/
+.fourth-section-head h1{
+  text-align: center;
+  font-size: 6.5rem;
+}
+
+.fourth-section{
+  margin: 5rem 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.fourth-section .task{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 40rem;
+  height: 40rem;
+  margin: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s linear;
+  border-radius: 2rem;
+}
+
+.fourth-section .task:hover{
+  background: #fff;
+  box-shadow: 0rem 0.4rem 2rem rgba(35, 52, 53, 0.25);
+}
+
+.fourth-section .task .docimg{
+  width: 25rem;
+  height: 25rem;
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+.fourth-section .task .taskhead h3{
+  font-size: 2.5rem;
+  margin: 0.5rem;
+}
+
+.fourth-section .task .taskpara p{
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.arrowimg{
+  width: 15rem;
+  height: 15rem;
+}
+
+
+/*--------------------------------- Footer section ---------------------*/
+footer {
+  width: 100%;
+  background: var(--background-color);
+  height: 20rem;
+  padding: 5rem 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  margin-top: auto;
+}
+
+
+footer .footer-menu {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-menu a{
+  display: block;
+}
+footer div h4 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+footer div a {
+  font-size: 1.3rem;
+  line-height: 150%;
+}
+
+.footer-div-1, .footer-div-2, .footer-div-3{
+  margin: 0 3rem;
+}
+
+
+
+
+
+
+/*--------------------- Media Queries for Navbar --------------------------------*/
+@media only screen and (max-width: 1300px) {
+  header {
+    padding: 0 3rem;
+  }
+  header nav .menu a {
+    padding: 0 1rem;
+    font-size: 1.5rem;
+  }
+  header nav .appointment button {
+    padding: 0.3rem 1.5rem;
+    font-size: 1rem;
+  }
+  .logo img{
+    height: 80%;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 950px) {
+  header {
+    padding: 0 3rem;
+  }
+  header nav .menu a {
+    padding: 0 0.5rem;
+    font-size: 1.3rem;
+  }
+  header nav .appointment button {
+    padding: 0.1rem 1rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  header {
+    padding: 0 0.05rem;
+  }
+  header nav .menu a {
+    padding: 0 0.3rem;
+    font-size: 1rem;
+  }
+  header nav .appointment button {
+    padding: 0.2rem 1.3rem;
+    font-size: 0.7rem;
+    margin-top: 0.8rem;
+  }
+  header nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+/*--------------------- Media Queries for First Section --------------------------------*/
+@media only screen and (max-width: 1400px) {
+  .first-section{
+    padding: 0 5rem;
+    margin-bottom: 5rem;
+  }
+  .first-section .leftside h1{
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+  }
+  .first-section .rightside img{
+    height: 100%;
+    width: 100%;
+  }
+  .first-section .leftside button{
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .first-section{
+    padding: 0 5rem;
+    margin-bottom: 5rem;
+  }
+  .first-section .leftside h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .first-section .leftside button{
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .first-section{
+    padding: 0 3rem;
+    margin-bottom: 5rem;
+    flex-direction: column-reverse;
+  }
+  .first-section .leftside{
+    text-align: center;
+  }
+  .first-section .leftside{
+    margin-top: 3rem;
+  }
+}
+
+
+/*--------------------- Media Queries for Second Section --------------------------------*/
+@media only screen and (max-width: 1400px) {
+  .second-section{
+    padding: 0 5rem;
+    margin-bottom: 5rem;
+  }
+  .second-section .rightside h1{
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+  }
+  .second-section .leftside img{
+    height: 100%;
+    width: 100%;
+  }
+  .second-section .rightside button{
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .second-section{
+    padding: 0 5rem;
+    margin-bottom: 5rem;
+  }
+  .second-section .rightside h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .second-section .rightside button{
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .second-section{
+    padding: 0 3rem;
+    margin-bottom: 5rem;
+    flex-direction: column;
+  }
+  .second-section .rightside{
+    text-align: center;
+  }
+  .second-section .rightside{
+    margin-top: 3rem;
+    margin-left: 0rem;
+  }
+}
+
+/*--------------------- Media Queries for Third Section --------------------------------*/
+@media only screen and (max-width: 1400px) {
+  .third-section-head h1{
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .third-section-head h1{
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .task img{
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    transition: all 0.3s;
+  }
+  
+  .task .taskhead h3{
+    font-size: 1.8rem;
+    margin: 0.5rem;
+  }
+  
+  .task .taskpara p{
+    font-size: 0.8rem;
+    margin: 0.5rem;
+  }
+  
+}
+
+/*--------------------- Media Queries for Fourth Section --------------------------------*/
+@media only screen and (max-width: 1400px) {
+  .fourth-section-head h1{
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .fourth-section-head h1{
+    font-size: 3rem;
+  }
+}
+  
+
+
+/*--------------------- Media Queries for Footer --------------------------------*/
+@media only screen and (max-width: 950px) {
+  footer .footer-menu{
+    display: none;
+  }
+  footer p{
+    font-size: 0.8rem;
+  }
+  footer img{
+    width: 50%;
+    height: 50%;
+  }
+  footer{
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer .logo-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 300px) {
+  footer p{
+    font-size: 0.4rem;
+  }
+  footer img{
+    width: 40%;
+    height: 40%;
+  }
+}

@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:500,600,700|Roboto&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #6F8BA4;
+    font-weight: 400;
+}
+
+.section-title {
+    padding: 120px 0px 70px 0px;
+    position: relative;
+}
+
+section::before{
+    content: "";
+    background: url("../image/22.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* For appointment start */
+.apnt::before{
+    content: "";
+    background: url("../image/bg-24.jfif") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* ---------end----------- */
+
+.section-title h1{
+    color: #223a66;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.contact-section{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    min-height: calc(100vh - 12rem - 20rem);
+}
+
+.contact-head{
+    margin-bottom: 3rem;
+}
+
+.contact-head h2 {
+    color: #223a66;
+    font-family: "Exo", sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+input[type="email"], input[type="text"], input[type="tel"], input[type="date"], .dept {
+    box-shadow: none;
+    height: 45px;
+    outline: none;
+    font-size: 14px;
+}
+  
+input[type="email"]:focus, input[type="text"]:focus, input[type="tel"]:focus {
+    box-shadow: none;
+    border: 1px solid #223a66;
+}
+
+.btn {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+    padding: 1rem 2rem;
+    font-family: "Exo", sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all .35s ease;
+    border-radius: 50px;
+    background: #223a66;
+    color: #fff;
+    border-color: #223a66;
+}
+
+.btn:hover {
+    background: #e12454;
+    border-color: #e12454;
+    color: #fff;
+}
+
+/*--------------------- Media Queries for Contact Section --------------------------------*/
+@media only screen and (max-width: 750px) {
+    .section-title h1{
+        font-size: 3rem;
+    }  
+    .contact-head h2 {
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .section-title h1{
+        font-size: 2.5rem;
+    }  
+    .contact-head h2 {
+        font-size: 1.5rem;
+    }
+}
